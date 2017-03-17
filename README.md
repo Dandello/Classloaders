@@ -2,8 +2,8 @@
 Соответственно, разные разработчики могут назвать свои классы одинаковым именем, ваш загрузчик должен корректно это обрабатывать. 
 
 Задача реализовать следующий класс.
-package ru.sbt;
 
+package ru.sbt;
 public class PluginManager {
     private final String pluginRootDirectory;
 
@@ -15,12 +15,11 @@ public class PluginManager {
         //todo
     }
 }
-
-
 Plugin - это базовый интерфейс  для всех плагинов
 public interface Plugin {
     //methods doesn't matter
     void doUsefull();
 }
 }
+
 PluginManager ищет скомпилированные классы плагина в папке pluginRootDirectory\pluginName\
